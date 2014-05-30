@@ -1,0 +1,24 @@
+require 'highline'
+
+robust system for requesting data from a user
+no need to make error checking or validation
+ease the tedious tasks of doing console input and output
+
+
+
+
+
+ask("string") { |q| q.default = "none"}
+
+validation
+
+ask("age? ", Integer) { |q| q.in = 0..105"}
+
+
+conversion for answers
+
+ask("birthday? ", Date)
+
+so you can "ask" for "birthday" and it will return a date variable with the answer
+
+so basically it reads in strings or ints and if its an int then it converts the normal gets string into an int for you and checks it all in one line
